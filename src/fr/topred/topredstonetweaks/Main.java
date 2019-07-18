@@ -19,11 +19,10 @@ public class Main extends JavaPlugin
 {
 
     @Override
-
     public void onEnable()
     {
         System.out.println("-------------------------------------------");
-        System.out.println("|        Nano il pue                      |");
+        System.out.println("|        TopRedstoneTweaks loaded         |");
         System.out.println("-------------------------------------------");
 
         registerCommands();
@@ -32,11 +31,10 @@ public class Main extends JavaPlugin
 
 
     @Override
-
     public void onDisable()
     {
         System.out.println("----------------------------------------");
-        System.out.println("|       TopRedstoneTweaks loaded       |");
+        System.out.println("|       TopRedstoneTweaks unloaded     |");
         System.out.println("----------------------------------------");
     }
 
