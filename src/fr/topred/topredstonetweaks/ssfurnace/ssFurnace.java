@@ -59,7 +59,7 @@ public class ssFurnace implements CommandExecutor
             return false;
         }
         PlayerInteractEvent event = new PlayerInteractEvent(player, Action.LEFT_CLICK_BLOCK, null, l.getBlock(), BlockFace.UP) ;
-        if(fr.topred.topredstonetweak.Main.canBuild(event))
+        if(fr.topred.topredstonetweaks.Main.canBuild(event))
         {
             l.getBlock().setType(Material.AIR);
             l.getBlock().setType(Material.FURNACE);
