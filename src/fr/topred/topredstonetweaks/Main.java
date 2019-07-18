@@ -23,14 +23,14 @@ public class Main extends JavaPlugin
     public void onEnable()
     {
         System.out.println("-------------------------------------------");
-        System.out.println("|        TopRedstoneTweaks loaded         |");
+        System.out.println("|        Nano il pue                      |");
         System.out.println("-------------------------------------------");
 
         registerCommands();
         registerEvents();
     }
 
-    @Override
+
 
     public void onDisable()
     {
