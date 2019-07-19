@@ -6,6 +6,8 @@ import com.github.intellectualsites.plotsquared.plot.object.Plot;
 import com.github.intellectualsites.plotsquared.plot.object.PlotPlayer;
 import com.github.intellectualsites.plotsquared.plot.util.Permissions;
 
+import fr.topred.topredstonetweaks.sscauldron.CauldronListener;
+import fr.topred.topredstonetweaks.sscauldron.CauldronPlace;
 import fr.topred.topredstonetweaks.ssfurnace.FurnaceListener;
 import fr.topred.topredstonetweaks.ssfurnace.ssFurnace;
 import org.bukkit.entity.Player;
@@ -43,6 +45,8 @@ public class Main extends JavaPlugin
     {
         PluginManager pm = getServer().getPluginManager();
         pm.registerEvents(new FurnaceListener(), this);
+        pm.registerEvents(new CauldronListener(), this);
+        pm.registerEvents(new CauldronPlace(),this);
     }
 
 
