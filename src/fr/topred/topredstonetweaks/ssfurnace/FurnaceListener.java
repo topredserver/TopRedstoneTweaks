@@ -26,7 +26,7 @@ public class FurnaceListener implements Listener {
 
 
             if(!Main.canBuild(event)){
-                return false;
+                return;
             }
             Player p = event.getPlayer();
 
