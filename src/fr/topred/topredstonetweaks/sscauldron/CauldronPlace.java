@@ -20,11 +20,14 @@ public class CauldronPlace implements Listener {
     public void onBlockPlaceEvent(BlockPlaceEvent event)
     {
         Block block = event.getBlockPlaced();
+        //Detection si le block placé est un chaudron
         if(! block.getType().equals(Material.CAULDRON))
         {
             return;
         }
+
         PlayerInteractEvent e = new PlayerInteractEvent(event.getPlayer(), Action.LEFT_CLICK_BLOCK, null, block, BlockFace.UP) ;
+        //detection si le joueur a la permission de build
         if(!Main.canBuild(e))
         {
             return;
