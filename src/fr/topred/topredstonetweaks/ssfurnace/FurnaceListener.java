@@ -1,5 +1,6 @@
 package fr.topred.topredstonetweaks.ssfurnace;
 
+import fr.topred.topredstonetweaks.Main;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.Furnace;
@@ -28,6 +29,7 @@ public class FurnaceListener implements Listener {
             if(!Main.canBuild(event)){
                 return;
             }
+
             Player p = event.getPlayer();
 
             Block b = event.getClickedBlock();
