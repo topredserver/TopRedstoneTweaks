@@ -34,6 +34,7 @@ public class CauldronListener implements Listener {
         {
             return;
         }
+        //Test si le joueur peut build
         PlayerInteractEvent e = new PlayerInteractEvent(event.getPlayer(), Action.LEFT_CLICK_BLOCK, null, block, BlockFace.UP) ;
         if(!Main.canBuild(e))
         {
