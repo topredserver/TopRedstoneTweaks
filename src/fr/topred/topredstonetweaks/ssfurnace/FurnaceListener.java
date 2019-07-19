@@ -23,6 +23,11 @@ public class FurnaceListener implements Listener {
 
         EquipmentSlot e = event.getHand();
         if(e != null && e.equals(EquipmentSlot.HAND)){
+
+
+            if(!Main.canBuild(event)){
+                return false;
+            }
             Player p = event.getPlayer();
 
             Block b = event.getClickedBlock();
